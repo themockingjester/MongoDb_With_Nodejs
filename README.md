@@ -19,6 +19,13 @@ repo contains examples for connecting and using mongodb with node
 
 ### write concern in mongodb
 ![write concern](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/writeconcern.png)
+write concern comes into picture whenever we want to either write or update data in mongodb.
+from above diagram we can see that client want to write in mongodb using insertOne command and mongodb takes helps from storage engine for doing writing task. An important thing to note here is journal (it is a file in which those write operations are written which havn't been performed yet in mongodb so in case if mongodb server fails in between , mongodb can recover data from this file).
+
+Let's have a look at three other options denoted by orange color.
+1) where w:1 and j:undefined: it specifies mongodb should return acknowledge message only when at least one instnce of mongodb has written the data.
+2) where w:1 and j:true : it means mongodb should return acknoledge message for our operation (either write or update) only when at least one instnce of mongodb has written the data also our operation has to be added in journal file (this will be good when mongodb went down bcz of some issue also didn't added data into journal but return us with acknoledge message hence the command can give us assurity that our operation has been receorded successfully)
+3) third one says mongodb have to perfrom action (denoted by second point) but have to give response in given time specified.
 
 ## Crud Operations With Transactional queries (or acid property)
 ```
