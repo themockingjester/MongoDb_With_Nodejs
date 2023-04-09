@@ -1,6 +1,22 @@
 # MongoDb_With_Nodejs
 repo contains examples for connecting and using mongodb with node
 
+## basic commands
+### Shutting down mongodb server
+![Shutting mongodb server](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/shutting%20down%20mongo%20db%20server.png)
+### Running mongo db server in background
+![Running mongodb server in background](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/running%20mongodb%20in%20background.png)
+### Setting dbpath and logpath in mongodb server
+![setting dbpath and logpath](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/Setting%20dbpath%20and%20logpath%20for%20mongodb%20server%20while%20running.png)
+
+### running mongodb with config file
+![running mongodb with config file](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/running%20mondb%20server%20with%20onfig%20file.png)
+
+
+## Writes in mongodb
+### writing data even if data writing for record fails in between
+![data writing even after failing of a record in between](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/allowing%20mongodb%20to%20continue%20adding%20data%20if%20error%20occurs.png)
+
 ## Crud Operations With Transactional queries (or acid property)
 ```
 
