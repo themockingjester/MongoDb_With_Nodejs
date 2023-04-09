@@ -17,6 +17,9 @@ repo contains examples for connecting and using mongodb with node
 ### writing data even if data writing for record fails in between
 ![data writing even after failing of a record in between](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/allowing%20mongodb%20to%20continue%20adding%20data%20if%20error%20occurs.png)
 
+### write concern in mongodb
+![write concern]([https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/allowing%20mongodb%20to%20continue%20adding%20data%20if%20error%20occurs.png](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/writeconcern.png))
+
 ## Crud Operations With Transactional queries (or acid property)
 ```
 
