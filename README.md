@@ -102,12 +102,41 @@ this operator funcgtionality can be achieved by not equals operator also but if 
 ### Fetching those records in which given fields have given data types 
 ![records in which given fields have given data types ](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/getting%20documents%20where%20given%20fields%20have%20given%20data%20types.png)
 in this diagram we are checking where phone must be of either double or string if you want to check only for one datatype then you can omit the array and specify one element
+<br>
+<br>
+### applying filter on nested documents
+![filter on nested documents](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/applying%20filter%20on%20nested%20documents.png)
 
+<br>
+<br>
+### applying multiple filters
+![applying multiple filters](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/applying%20multiple%20filters.png)
+in above screenshot we have two queries which seems same at first glance but they are totally different
+first one returns all those records where either hobbies.title = Sports and hobbies.frequency equals to 3 (it don't mean both condition should apply to one nested document that is for one record if we have a array of nested documents and in one of those nested document title is Sports and in other nested one frequency is 3 then the above query still that document to us. while second query mongo db checks both given condition should apply to the at least one of the nested documents.
 
+<br>
+<br>
+### getting records where one field is greater than other
+![getting records where one field is greater than other](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/getting%20records%20where%20one%20field%20is%20greater%20than%20other.png)
+above query will fetch all documents where volume field is greater than target field.
+<br>
+<br>
+### finding documents where field (as array) has size equals to given number
+![finding documents where field (as array) has size equals to given number](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/finding%20records%20having%20field%20(as%20array)%20of%20given%20size%20.png)
 
+<br>
+<br>
+### searching for a array
+![array exact match (even order should be same)](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/searching%20for%20a%20%20array%20part%201.png)
+in above query mongo db returns those records where genre must be equals to given array `["action","thriller"] (even order must be eaxct same)`
+![array match (order can be different)](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/searching%20for%20a%20%20array%20part%202.png)
+in above query mongo db will return those documents where genre must have "action" and "thriller" (order can be differnt i.e action can come first or thriller can come first.)
 
-
-
+<br>
+<br>
+### Using regex in searching
+![using regex in search)](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/using%20regex%20for%20text%20snippet%20searching.png)
+above query will return all those document where musical word will present inside summary field (note these regex queries are not efficient)
 
 ## Crud Operations With Transactional queries (or acid property)
 ```
