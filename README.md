@@ -106,14 +106,12 @@ in this diagram we are checking where phone must be of either double or string i
 <br>
 ### applying filter on nested documents
 ![filter on nested documents](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/applying%20filter%20on%20nested%20documents.png)
-
 <br>
 <br>
 ### applying multiple filters
 ![applying multiple filters](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/applying%20multiple%20filters.png)
 in above screenshot we have two queries which seems same at first glance but they are totally different
 first one returns all those records where either hobbies.title = Sports and hobbies.frequency equals to 3 (it don't mean both condition should apply to one nested document that is for one record if we have a array of nested documents and in one of those nested document title is Sports and in other nested one frequency is 3 then the above query still that document to us. while second query mongo db checks both given condition should apply to the at least one of the nested documents.
-
 <br>
 <br>
 ### getting records where one field is greater than other
@@ -123,7 +121,6 @@ above query will fetch all documents where volume field is greater than target f
 <br>
 ### finding documents where field (as array) has size equals to given number
 ![finding documents where field (as array) has size equals to given number](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/finding%20records%20having%20field%20(as%20array)%20of%20given%20size%20.png)
-
 <br>
 <br>
 ### searching for a array
