@@ -69,30 +69,21 @@ Let's have a look at three other options denoted by orange color.
 ![logical and](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/and%20ooperator.png)
 <br>
 <br>
-
-
 ### logical or operator
 ![logical or](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/logical%20or.png)
-
 <br>
 <br>
-
 ### nor operator
 ![nor](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/nor%20operator%20(does%20not%20satisfies%20given%20conditions).png)
 it filter out those records only which don't satisfies the given conditions.
 <br>
 <br>
-
-
-
 ### logical not operator
 ![logical not](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/not%20operator.png)
 this operator funcgtionality can be achieved by not equals operator also but if we are not able to use not equals operator for any cases then we use not operator.
 <br>
 <br>
 <br>
-
-
 ### checking a field exists in a document or not 
 ![checking a field exists](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/checking%20wheather%20a%20field%20exists%20on%20a%20document%20using%20exists%20command.png)
 
@@ -128,7 +119,6 @@ above query will fetch all documents where volume field is greater than target f
 in above query mongo db returns those records where genre must be equals to given array `["action","thriller"] (even order must be eaxct same)`
 ![array match (order can be different)](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/searching%20for%20a%20%20array%20part%202.png)
 in above query mongo db will return those documents where genre must have "action" and "thriller" (order can be differnt i.e action can come first or thriller can come first.)
-
 <br>
 <br>
 ### Using regex in searching
