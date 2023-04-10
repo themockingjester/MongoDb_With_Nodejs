@@ -2,20 +2,45 @@
 repo contains examples for connecting and using mongodb with node
 
 ## basic commands
+<br>
+<br>
+
 ### Shutting down mongodb server
 ![Shutting mongodb server](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/shutting%20down%20mongo%20db%20server.png)
+
+<br>
+<br>
+
 ### Running mongo db server in background
 ![Running mongodb server in background](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/running%20mongodb%20in%20background.png)
+
+<br>
+<br>
+
 ### Setting dbpath and logpath in mongodb server
 ![setting dbpath and logpath](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/Setting%20dbpath%20and%20logpath%20for%20mongodb%20server%20while%20running.png)
+<br>
+<br>
+
+
 
 ### running mongodb with config file
 ![running mongodb with config file](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/running%20mondb%20server%20with%20onfig%20file.png)
+<br>
+<br>
 
 
 ## Writes in mongodb
+
+<br>
+<br>
+<br>
+
 ### writing data even if data writing for record fails in between
 ![data writing even after failing of a record in between](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/allowing%20mongodb%20to%20continue%20adding%20data%20if%20error%20occurs.png)
+
+<br>
+<br>
 
 ### write concern in mongodb
 ![write concern](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/writeconcern.png)
@@ -26,30 +51,55 @@ Let's have a look at three other options denoted by orange color.
 1) where w:1 and j:undefined: it specifies mongodb should return acknowledge message only when at least one instnce of mongodb has written the data.
 2) where w:1 and j:true : it means mongodb should return acknoledge message for our operation (either write or update) only when at least one instnce of mongodb has written the data also our operation has to be added in journal file (this will be good when mongodb went down bcz of some issue also didn't added data into journal but return us with acknoledge message hence the command can give us assurity that our operation has been receorded successfully)
 3) third one says mongodb have to perfrom action (denoted by second point) but have to give response in given time specified.
+<br>
+<br>
+
+
+
 ### write concern in practice
 ![write concern in practice](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/write%20concern%20in%20practice.png)
+
+<br>
+<br>
+
 
 ## Read in mongodb
 
 ### logical and operator
 ![logical and](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/and%20ooperator.png)
+<br>
+<br>
+
 
 ### logical or operator
 ![logical or](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/logical%20or.png)
 
+<br>
+<br>
+
 ### nor operator
 ![nor](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/nor%20operator%20(does%20not%20satisfies%20given%20conditions).png)
 it filter out those records only which don't satisfies the given conditions.
+<br>
+<br>
+
 
 
 ### logical not operator
 ![logical not](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/not%20operator.png)
 this operator funcgtionality can be achieved by not equals operator also but if we are not able to use not equals operator for any cases then we use not operator.
+<br>
+<br>
+<br>
 
 
 ### checking a field exists in a document or not 
 ![checking a field exists](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/checking%20wheather%20a%20field%20exists%20on%20a%20document%20using%20exists%20command.png)
 
+<br>
+<br>
+
+<br>
 ### Fetching those records in which given fields have given data types 
 ![records in which given fields have given data types ](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/getting%20documents%20where%20given%20fields%20have%20given%20data%20types.png)
 in this diagram we are checking where phone must be of either double or string if you want to check only for one datatype then you can omit the array and specify one element
