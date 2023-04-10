@@ -99,7 +99,6 @@ this operator funcgtionality can be achieved by not equals operator also but if 
 <br>
 <br>
 
-<br>
 ### Fetching those records in which given fields have given data types 
 ![records in which given fields have given data types ](https://github.com/themockingjester/MongoDb_With_Nodejs/blob/main/getting%20documents%20where%20given%20fields%20have%20given%20data%20types.png)
 in this diagram we are checking where phone must be of either double or string if you want to check only for one datatype then you can omit the array and specify one element
